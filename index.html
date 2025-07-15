@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Glass City - A Power Pals Game</title>
+    <link rel=""stylesheet"" href=""style.css""> 
+</head>
+<body>
+
+    <div id=""title-screen"" class=""screen active"">
+        <h1>Glass City</h1>
+        <nav class=""main-menu"">
+            <button id=""new-game-btn"">New Game</button>
+            <button id=""load-game-btn"">Load Game</button>
+            <button id=""rules-btn"">Rules</button>
+        </nav>
+    </div>
+
+    <div id=""rules-screen"" class=""screen"">
+        <h2>How to Play</h2>
+        <div class=""rules-content"">
+            <p>Welcome to Glass City! Your goal is to...</p>
+        </div>
+        <button id=""back-to-title-btn"">Back to Main Menu</button>
+    </div>
+
+
+    <main id=""game-screen"" class=""screen"">
+        
+        <header class=""game-header"">
+            <h2>Glass City Watchtower</h2>
+        </header>
+
+        <aside id=""left-sidebar"">
+            <div class=""sidebar-box"">
+                <h3>Current Twist</h3>
+                <div id=""twist-card-slot"" class=""card-display"">
+                    <p>(No Active Twist)</p>
+                </div>
+            </div>
+            <div class=""sidebar-box"">
+                <h3>Game Status</h3>
+                <ul id=""game-trackers"">
+                    <li>Successes: <span id=""success-counter"">0</span> / 12</li>
+                    <li>Failures: <span id=""failure-counter"">0</span> / 3</li>
+                    <li>Time Bombs: <span id=""timebomb-counter"">20</span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <aside id=""right-sidebar"">
+            <div class=""sidebar-box"">
+                <h3>Powermobile</h3>
+                <div id=""powermobile-die"" class=""die-display"">[+6]</div>
+            </div>
+             <div class=""sidebar-box"">
+                <h3>Medals</h3>
+                <div id=""medals-display"">
+                    </div>
+            </div>
+             <div class=""sidebar-box"">
+                <h3>Deck</h3>
+                <p>Situations Remaining: <span id=""deck-counter"">30</span></p>
+            </div>
+        </aside>
+
+        <section id=""watchtower"">
+            <div class=""situation-slot"">
+                <div class=""card-display situation-card"">SITUATION 1</div>
+                <label class=""token-toggle"">
+                    <input type=""checkbox"" name=""token1""> Prioritize
+                </label>
+            </div>
+            <div class=""situation-slot"">
+                <div class=""card-display situation-card"">SITUATION 2</div>
+                 <label class=""token-toggle"">
+                    <input type=""checkbox"" name=""token2""> Prioritize
+                </label>
+            </div>
+            <div class=""situation-slot"">...</div>
+             <div class=""situation-slot"">...</div>
+             <div class=""situation-slot"">...</div>
+             <div class=""situation-slot"">...</div>
+        </section>
+
+        <section id=""status-bar"">
+            <div id=""heroic-points-display"">
+                Heroic Points: <span id=""hp-value"">0</span>
+            </div>
+            <div id=""current-power-display"">
+                Current Power: <span id=""power-value"">0</span>
+            </div>
+            <div id=""casualty-display"">
+                Casualties: <span id=""casualty-value"">0</span>
+            </div>
+        </section>
+
+        <footer id=""player-actions"">
+            <div id=""ability-area"">
+                <h4>Choose Ability</h4>
+                <button class=""ability-btn"" data-value=""5"">Ability 1 (5)</button>
+                <button class=""ability-btn"" data-value=""4"">Ability 2 (4)</button>
+                <button class=""ability-btn"" data-value=""3"">Ability 3 (3)</button>
+            </div>
+            <div id=""hand-area"">
+                <h4>Drawn Cards</h4>
+                </div>
+            <div id=""sidekick-area"">
+                <h4>Sidekick</h4>
+                <div id=""sidekick-die"" class=""die-display"">[+1]</div>
+                 <button id=""roll-btn"">Roll</button>
+            </div>
+            <div id=""ui-controls"">
+                <h4>Actions</h4>
+                <button id=""power-up-btn"">Power Up!</button>
+                <button id=""all-set-btn"">All Set</button>
+                <button id=""undo-btn"">Undo</button>
+                <button id=""save-quit-btn"">Save & Quit</button>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src=""script.js""></script>
+</body>
+</html>
+<body>
+    <nav id=""persistent-nav"">
+        <button id=""goto-title-btn"">Main Menu</button>
+        <button id=""goto-game-btn"">Game Screen</button>
+        <button id=""goto-rules-btn"">Rules</button>
+    </nav>
+
+    <div id=""title-screen"" class=""screen active"">
+        <h1>Glass City</h1>
+        </div>
+
+    <div id=""rules-screen"" class=""screen"">
+        <h2>How to Play</h2>
+        </div>
+
+    <main id=""game-screen"" class=""screen"">
+        </main>
+
+    <script src=""script.js""></script>
+</body>
